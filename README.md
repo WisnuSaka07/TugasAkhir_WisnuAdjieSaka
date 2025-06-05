@@ -11,6 +11,11 @@ Ada 3 Implementasi :
 
 Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman alat saya menggunakan ekstensi platformIO di VsCode.
 
+Koneksikan perangkat mcu dengan komputer, tutorial install drvier ch/cp :
+-asdasd
+-asdasd
+-asdasd
+
 Tutorial Install PlatformIO :
 - asdasd
 - asdasdas
@@ -23,3 +28,5 @@ Setelah selesai setup PlatformIO masuk ke halaman "Home"  dari PlatformIO, lalu 
 Masuk ke Alat Pertama yaitu JDY-33, jadi karena JDY merupakan modul bluetooth, untuk memprogram dia kita harus menggunakan mcu juga, disini saya menggunakan esp32. 
 
 Untuk melakukan programing nya di src/main.cpp
+
+Masukan program ke main.cpp (Buat beberapa Project)
