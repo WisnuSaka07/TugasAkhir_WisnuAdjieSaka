@@ -39,7 +39,7 @@ void setup() {
     adv->stop();
     if (i < BURST_CNT - 1) delay(BURST_GAP);
   }
-  Serial.printf("📡 Burst %u× selesai, masuk deep‑sleep…\n", BURST_CNT);
+  Serial.printf("Burst %u× selesai, masuk deep‑sleep…\n", BURST_CNT);
 
   
   BLEDevice::deinit(true);        
@@ -53,8 +53,8 @@ void loop() {  }
 void wakeupMsg() {
   esp_sleep_wakeup_cause_t cause = esp_sleep_get_wakeup_cause();
   if (cause == ESP_SLEEP_WAKEUP_TIMER) {
-    Serial.println("🔋 Wake‑up dari deep‑sleep");
+    Serial.println("Bangun");
   } else {
-    Serial.println("🔄 Cold boot / reset normal");
+    Serial.println("reset normal");
   }
 }
