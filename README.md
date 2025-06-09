@@ -12,6 +12,8 @@ Ada 3 Implementasi :
 Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman alat saya menggunakan ekstensi platformIO di VsCode.
 {GAMBAR ALAT}
 
+![Image Alt](image_url)
+
 Koneksikan perangkat mcu dengan komputer, tutorial install drvier ch/cp :
 - asdasd
 - asdasd
