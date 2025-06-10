@@ -1,12 +1,13 @@
 # QUICK STARTUP GUIDE
 Judul : Perancangan dan Implementasi Alat Tracking Mahasiswa Berbasis BLE untuk Penggunaan Absensi dan Validator Posisi Mahasiswa dengan Analisis Konsumsi Energi pada JDY-33 dan Esp32
 
+
 Ada 3 Implementasi :
 - Implementasi Alat 
 - Implementasi Server
-- Implementasi Receiver
 
-## Implementasi Alat 
+
+## Implementasi Alat (Beacon dan Receiver)
 
 Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman alat saya menggunakan ekstensi platformIO di VsCode. Berikut langkah-langkah implementasinya :
 
@@ -25,28 +26,22 @@ Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman a
 ![Image](https://github.com/user-attachments/assets/445eaa3f-3105-4677-86b4-41146e7c8187)
 - Setelah berhasil install PlaformIo, kalian bisa cek tutorial untuk memulai PlatformIo dari video ini https://youtu.be/tc3Qnf79Ny8?si=eTluzbBJOMf1335Y
 
-### 3. Upload program ke perangkat esp 32
-- 
+### 3. Upload program Beacon ke perangkat esp 32
+- Pilih dan upload satu dari empat skenario program berikut, sesuai dengan pengujian yang ingin dilakukan
+- esp32_burst5.cpp → Program dengan sleep selama 5 menit.
+- esp32_burst8.cpp → Program dengan sleep selama 8 menit.
+- esp32_delay5.cpp → Program dengan delay 1 menit lalu sleep selama 5 menit.
+- Esp32_delay8.cpp → Program dengan delay 1 menit lalu sleep selama 8 menit.
+- Pastikan hanya satu program dijalankan pada tiap ESP32 sesuai skenario uji konsumsi energi.
 
-Setelah selesai setup PlatformIO masuk ke halaman "Home"  dari PlatformIO, lalu :
-- Click New Project
-- adasdasd
-- asdasdasd
-
-Masuk ke Alat Pertama yaitu JDY-33, jadi karena JDY merupakan modul bluetooth, untuk memprogram dia kita harus menggunakan mcu juga, disini saya menggunakan esp32. 
-
-Untuk melakukan programing nya di src/main.cpp
-
-Masukan program ke main.cpp (Buat beberapa Project)
+### 4. Upload program Receiver ke perangkat esp 32
+- Upload program receiver.cpp ke ESP32 yang akan dijadikan receiver di titik-titik deteksi lokasi
+- wifi dan ip
 
 
+## Implementasi Server 
 
-
-## Implementasi Receiver
-
-
-
-
+.....
 
 
 
