@@ -41,14 +41,31 @@ Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman a
 
 ## Implementasi Server 
 
-.....
+### 1. Persiapan File Server
 
+- Buka Visual Studio Code
+- Buat file python baru 
+- Masukkan program server dari file server.py yang sudah tersedia diatas
 
+### 2. Jalankan Server
 
+- Pastikan Python telah terinstall pada perangkat kalian
+- Buka terminal pada folder project, lalu jalankan
+```
+python server.py
+```
+- Jika berhasil, server akan berjalan pada port 5000. Kamu dapat mengaksesnya melalui browser
 
+### 3. Fungsi Server
 
+- Saat server berhasil dijalankan, maka tampilan dashboard akan muncul pada browser
+- Receiver ESP32 akan  mengirimkan data beacon yang terdeteksi ke server ini
+- Dashboard akan menampilkan lokasi beacon secara real-time dan log waktu deteksinya
+![Image](https://github.com/user-attachments/assets/25a900e0-dd04-4ae7-8da6-d3102967c735)
 
-
+Catatan : 
+- Pastikan receiver telah terkoneksi ke jaringan Wi-Fi yang sama dengan server
+- Jangan tutup terminal selama pengujian karena akan mematikan server lokal
 
 
 
