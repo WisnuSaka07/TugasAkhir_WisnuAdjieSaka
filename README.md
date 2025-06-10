@@ -6,7 +6,6 @@ Ada 3 Implementasi :
 - Implementasi Server
 - Implementasi Receiver
 
-
 ## Implementasi Alat 
 
 Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman alat saya menggunakan ekstensi platformIO di VsCode. Berikut langkah-langkah implementasinya :
