@@ -67,24 +67,41 @@ Langkah ini dilakukan jika ingin menjalankan dari perangkat diluar jaringan ITS
 ![Image](https://github.com/user-attachments/assets/735d227b-2c69-4640-b115-38064ee8749a)
 
 
-
-
-- Buka Visual Studio Code
-- Buat file python baru 
-- Masukkan program server dari file server.py yang sudah tersedia diatas
-
 ### 2. Jalankan Server
+Untuk menjalankan server nya yang pertama dilakukan masuk ke ssh 10.4.90.28. Pertama pada terminal perangkat mu (bebas lokasinya dimana) masukan command ini untuk mengakses ssh nya
+```
+ssh root@10.4.90.28
+```
+setelah itu masukan passwordnya
+![Image](https://github.com/user-attachments/assets/94ec8590-777b-4b5d-aa16-1dc83b4ad7bb)
 
-- Pastikan Python telah terinstall pada perangkat kalian
-- Buka terminal pada folder project, lalu jalankan
+setelah masuk kedalam ssh nya, kita lanjut ke tahap instalasi dan setup, pertama kita update dulu 
 ```
-python server.py
+sudo apt update && sudo apt upgrade -y
 ```
-- Jika berhasil, server akan berjalan pada port 5000. Kamu dapat mengaksesnya melalui browser
+Lalu kita install python dan pip
+```
+sudo apt install python3 python3-pip -y
+```
+Lalu kita install flask 
+```
+pip install flask
+```
+Setelah menginstall semua yang dibutuhkan, kita masukan akan membuat file untuk program server nya
+```
+nano server.py
+```
+Lalu copy file "server.py" ke nano tersebut, jika sudah klik save, dan jalankan prgramnya
+```
+python3 server.py
+``` 
 
 ### 3. Fungsi Server
+- Saat server berhasil dijalankan, pada terminal akan muncul informasi ini
+![Image](https://github.com/user-attachments/assets/02fe8b3b-b972-4478-ab9e-e849ead122eb)
 
-- Saat server berhasil dijalankan, maka tampilan dashboard akan muncul pada browser
+- 
+maka tampilan dashboard akan muncul pada browser
 - Receiver ESP32 akan  mengirimkan data beacon yang terdeteksi ke server ini
 - Dashboard akan menampilkan lokasi beacon secara real-time dan log waktu deteksinya
 ![Image](https://github.com/user-attachments/assets/d14e8ca7-dd9a-4af3-839d-3402048c5991)
