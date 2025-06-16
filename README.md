@@ -19,24 +19,39 @@ Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman a
 - Jika sudah, pada saat kalian menyambungkan perangkat esp 32 ke komputer kalian, maka akan terlihat seperti gambar dibawah
 ![Image](https://github.com/user-attachments/assets/d543da58-5879-495d-93c1-1245a99688c9)
 
-### 2. Tutorial Install PlatformIO :
+### 2. Tutorial Install PlatformIO
 - Oke selanjutnya untuk memprogram alatnya kita menggunakan PlatformIo melalui Visual Studio Code
 - Pertama kalian bisa install Vscode, kalian bisa liat dari video ini https://youtu.be/cu_ykIfBprI?si=zf6j9igDM7ElvqMv
 - Setelah itu kalian bisa Install Extensions PlatformIo
 ![Image](https://github.com/user-attachments/assets/445eaa3f-3105-4677-86b4-41146e7c8187)
 - Setelah berhasil install PlaformIo, kalian bisa cek tutorial untuk memulai PlatformIo dari video ini https://youtu.be/tc3Qnf79Ny8?si=eTluzbBJOMf1335Y
 
+
 ### 3. Upload program Beacon ke perangkat esp 32
-- Pilih dan upload satu dari empat skenario program berikut, sesuai dengan pengujian yang ingin dilakukan
+Pilih dan upload satu dari empat skenario program berikut, sesuai dengan pengujian yang ingin dilakukan. Ada 2 jenis program untuk beacon esp32 :
+- Program burst langsung sleep
+- Prgram delay sebelum sleep
+
+Program untuk burst :
 - esp32_burst5.cpp → Program dengan sleep selama 5 menit.
 - esp32_burst8.cpp → Program dengan sleep selama 8 menit.
+
+Program untuk delay :
 - esp32_delay5.cpp → Program dengan delay 1 menit lalu sleep selama 5 menit.
 - Esp32_delay8.cpp → Program dengan delay 1 menit lalu sleep selama 8 menit.
-- Pastikan hanya satu program dijalankan pada tiap ESP32 sesuai skenario uji konsumsi energi.
+
+Pastikan hanya satu program dijalankan pada tiap ESP32 sesuai skenario uji konsumsi energi.
+
 
 ### 4. Upload program Receiver ke perangkat esp 32
-- Upload program receiver.cpp ke ESP32 yang akan dijadikan receiver di titik-titik deteksi lokasi
-- wifi dan ip
+Upload program receiver.cpp ke ESP32 yang akan dijadikan receiver di titik-titik deteksi lokasi. Lalu pada bagian ini bisa diganti sesuai nama ruangan
+```
+const char* LOCATION_NAME = "Lokasi B";
+```
+Dan kalian juga bisa ubah jangkauan deteksi sesuai luas ruangan (ganti angka "-85")
+```
+if (rssi > -85 && advertisedDevice.haveName()) { 
+```
 
 
 ## Implementasi Server 
