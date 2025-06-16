@@ -14,16 +14,21 @@ Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman a
 
 ### 1. Instal driver microcontroller pada komputer
 - Pertama kalian bisa cek chip pada esp 32 kalian apa, biasanya CH9102/CP2102, karena pada implementasi ini menggunakan ESP 32 DevKit V1, jadi chipnya CH9102
+
 ![Image](https://github.com/user-attachments/assets/e8b23da9-5fc1-4b90-8a00-79e875326035)
+
 - Lalu download drivernya, kalian bisa liat dari video ini https://youtu.be/JmDxP4O4Trk?si=LEQVhztODxG_LDDF
 - Jika sudah, pada saat kalian menyambungkan perangkat esp 32 ke komputer kalian, maka akan terlihat seperti gambar dibawah
+
 ![Image](https://github.com/user-attachments/assets/d543da58-5879-495d-93c1-1245a99688c9)
 
 ### 2. Tutorial Install PlatformIO
 - Oke selanjutnya untuk memprogram alatnya kita menggunakan PlatformIo melalui Visual Studio Code
 - Pertama kalian bisa install Vscode, kalian bisa liat dari video ini https://youtu.be/cu_ykIfBprI?si=zf6j9igDM7ElvqMv
 - Setelah itu kalian bisa Install Extensions PlatformIo
+
 ![Image](https://github.com/user-attachments/assets/445eaa3f-3105-4677-86b4-41146e7c8187)
+
 - Setelah berhasil install PlaformIo, kalian bisa cek tutorial untuk memulai PlatformIo dari video ini https://youtu.be/tc3Qnf79Ny8?si=eTluzbBJOMf1335Y
 
 
@@ -60,10 +65,15 @@ Untuk implementasi server ini akan dijalankan di ip "10.4.90.28", ini merupakan 
 ### 1. Persiapan VPN ITS
 Langkah ini dilakukan jika ingin menjalankan dari perangkat diluar jaringan ITS
 - masuk myITS Portal Lalu pilih "myITS VPN"
+
 ![Image](https://github.com/user-attachments/assets/59e06cbb-8c21-45b4-946c-54151f485744)
+
 - ikuti petunjuk yang ada website tersebut, kalian akan diminta menginstall open VPN dan profil myITS VPN
+
 ![Image](https://github.com/user-attachments/assets/b714802f-6afa-48c0-9e77-fa0fdd30f06c)
-- Jika sudah maka kalian sudah berada di jaringan ITS menggunakan VPN 
+
+- Jika sudah maka kalian sudah berada di jaringan ITS menggunakan VPN
+
 ![Image](https://github.com/user-attachments/assets/735d227b-2c69-4640-b115-38064ee8749a)
 
 
