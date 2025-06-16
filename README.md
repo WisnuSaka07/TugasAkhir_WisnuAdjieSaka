@@ -100,15 +100,16 @@ python3 server.py
 - Saat server berhasil dijalankan, pada terminal akan muncul informasi ini
 ![Image](https://github.com/user-attachments/assets/02fe8b3b-b972-4478-ab9e-e849ead122eb)
 
-- 
-maka tampilan dashboard akan muncul pada browser
+- Masuk pada web browser sesuai ip dan port yang tertera
+- Setelah masuk, berikut tampilan dashboard yang muncul pada browser kalian
+![Image](https://github.com/user-attachments/assets/d14e8ca7-dd9a-4af3-839d-3402048c5991)
 - Receiver ESP32 akan  mengirimkan data beacon yang terdeteksi ke server ini
 - Dashboard akan menampilkan lokasi beacon secara real-time dan log waktu deteksinya
-![Image](https://github.com/user-attachments/assets/d14e8ca7-dd9a-4af3-839d-3402048c5991)
+
 
 Catatan : 
-- Pastikan receiver telah terkoneksi ke jaringan Wi-Fi yang sama dengan server
-- Jangan tutup terminal selama pengujian karena akan mematikan server lokal
+- Pastikan receiver telah terkoneksi ke jaringan Wi-Fi ITS
+- Jangan tutup terminal selama pengujian karena akan mematikan server pada jaringan ITS
 
 
 
