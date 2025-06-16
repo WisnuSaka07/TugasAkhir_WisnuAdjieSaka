@@ -76,7 +76,7 @@ setelah itu masukan passwordnya
 
 ![Image](https://github.com/user-attachments/assets/94ec8590-777b-4b5d-aa16-1dc83b4ad7bb)
 
-setelah masuk kedalam ssh nya, kita lanjut ke tahap instalasi dan setup, pertama kita update dulu 
+setelah masuk kedalam ssh nya, lakukan instalasi dan setup awal dengan langkah berikut 
 ```
 sudo apt update && sudo apt upgrade -y
 ```
@@ -88,29 +88,32 @@ Lalu kita install flask
 ```
 pip install flask
 ```
-Setelah menginstall semua yang dibutuhkan, kita masukan akan membuat file untuk program server nya
+Setelah semua dependensi terpasang, buat file Python untuk menjalankan server
 ```
 nano server.py
 ```
-Lalu copy file "server.py" ke nano tersebut, jika sudah klik save, dan jalankan prgramnya
+Lalu copy file "server.py" ke dalam editor tersebut. Setelah selesai, tekan CTRL + X, lalu Y, dan tekan Enter untuk menyimpan. Terakhir, jalankan server dengan perintah
 ```
 python3 server.py
 ``` 
 
 ### 3. Fungsi Server
 - Saat server berhasil dijalankan, pada terminal akan muncul informasi ini
+
 ![Image](https://github.com/user-attachments/assets/02fe8b3b-b972-4478-ab9e-e849ead122eb)
 
-- Masuk pada web browser sesuai ip dan port yang tertera
+- server sudah aktif dan bisa diakses melalui browser menggunakan alamat ip dan port yang tertera
 - Setelah masuk, berikut tampilan dashboard yang muncul pada browser kalian
+
 ![Image](https://github.com/user-attachments/assets/d14e8ca7-dd9a-4af3-839d-3402048c5991)
-- Receiver ESP32 akan  mengirimkan data beacon yang terdeteksi ke server ini
+
+- Receiver ESP32 akan mengirimkan data beacon yang terdeteksi ke server ini
 - Dashboard akan menampilkan lokasi beacon secara real-time dan log waktu deteksinya
 
 
 Catatan : 
 - Pastikan receiver telah terkoneksi ke jaringan Wi-Fi ITS
-- Jangan tutup terminal selama pengujian karena akan mematikan server pada jaringan ITS
+- Jangan tutup terminal selama pengujian karena akan mematikan program server yang berjalan pada jaringan ITS
 
 
 
