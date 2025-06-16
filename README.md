@@ -73,6 +73,7 @@ Untuk menjalankan server nya yang pertama dilakukan masuk ke ssh 10.4.90.28. Per
 ssh root@10.4.90.28
 ```
 setelah itu masukan passwordnya
+<br />
 ![Image](https://github.com/user-attachments/assets/94ec8590-777b-4b5d-aa16-1dc83b4ad7bb)
 
 setelah masuk kedalam ssh nya, kita lanjut ke tahap instalasi dan setup, pertama kita update dulu 
