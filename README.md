@@ -55,8 +55,19 @@ if (rssi > -85 && advertisedDevice.haveName()) {
 
 
 ## Implementasi Server 
+Untuk implementasi server ini akan dijalankan di ip "10.4.90.28", ini merupakan salah satu ip ITS, berikut langkah-langkah implementasinya : 
 
-### 1. Persiapan File Server
+### 1. Persiapan VPN ITS
+Langkah ini dilakukan jika ingin menjalankan dari perangkat diluar jaringan ITS
+- masuk myITS Portal Lalu pilih "myITS VPN"
+![Image](https://github.com/user-attachments/assets/59e06cbb-8c21-45b4-946c-54151f485744)
+- ikuti petunjuk yang ada website tersebut, kalian akan diminta menginstall open VPN dan profil myITS VPN
+![Image](https://github.com/user-attachments/assets/b714802f-6afa-48c0-9e77-fa0fdd30f06c)
+- Jika sudah maka kalian sudah berada di jaringan ITS menggunakan VPN 
+![Image](https://github.com/user-attachments/assets/735d227b-2c69-4640-b115-38064ee8749a)
+
+
+
 
 - Buka Visual Studio Code
 - Buat file python baru 
@@ -76,7 +87,7 @@ python server.py
 - Saat server berhasil dijalankan, maka tampilan dashboard akan muncul pada browser
 - Receiver ESP32 akan  mengirimkan data beacon yang terdeteksi ke server ini
 - Dashboard akan menampilkan lokasi beacon secara real-time dan log waktu deteksinya
-![Image](https://github.com/user-attachments/assets/25a900e0-dd04-4ae7-8da6-d3102967c735)
+![Image](https://github.com/user-attachments/assets/d14e8ca7-dd9a-4af3-839d-3402048c5991)
 
 Catatan : 
 - Pastikan receiver telah terkoneksi ke jaringan Wi-Fi yang sama dengan server
