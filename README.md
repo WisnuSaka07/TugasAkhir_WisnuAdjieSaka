@@ -57,6 +57,23 @@ Dan kalian juga bisa ubah jangkauan deteksi sesuai luas ruangan (ganti angka "-8
 ```
 if (rssi > -85 && advertisedDevice.haveName()) { 
 ```
+Untuk koneksi internet pada alat receiver ini, kita menggunakan wifi manager dari esp32, berikut cara menggunakannya:
+- Setelah kamu upload program kamu pada esp32 nya, kamu bisa nyalakan esp32 supaya programnya bisa berjalan
+- Setelah itu kamu buka hp atau komputer mu lalu koneksikan ke jaringan "ESP32-Receiver" dengan password "admin123"
+
+![Image](https://github.com/user-attachments/assets/828a74a6-f3ed-4ed8-bc97-d6c5fd222236)
+
+- Setelah koneksi dengan jaringannya, buka browser ke "192.168.4.1"
+
+![Image](https://github.com/user-attachments/assets/6764ac6d-11ca-45ac-ab62-227949b620d6)
+
+- Lalu masuk ke "Configur WIFI", pilih wifi lokal mana yang mau kamu gunakan, masukan ssid dan passwordnya
+
+![Image](https://github.com/user-attachments/assets/850ed2c9-fd0e-41b7-82f7-2c6e4c4c0762)
+
+- ESP-32 sudah terhubung dengan internet, dengan menggunakan WIFI manager ini, jadi tidak perlu mengganti code jika ingin mengganti jaringan WIFI
+
+
 
 
 ## Implementasi Server 
