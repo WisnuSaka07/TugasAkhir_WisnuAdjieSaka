@@ -29,7 +29,19 @@ Ada 2 alat yang digunakan yaitu ESP 32 DevKit V1 dan JDY-33. Untuk pemrograman a
 
 ![Image](https://github.com/user-attachments/assets/445eaa3f-3105-4677-86b4-41146e7c8187)
 
-- Setelah berhasil install PlaformIo, kalian bisa cek tutorial untuk memulai PlatformIo dari video ini https://youtu.be/tc3Qnf79Ny8?si=eTluzbBJOMf1335Y
+- Setelah berhasil install PlaformIo, masuk ke home PlatformIO dan pilih New Project
+
+![Image](https://github.com/user-attachments/assets/d4757ff1-9002-4a7f-b7af-a8b5af24cdd9)
+
+- Masukan konfigurasi sesuai alat yang dipakai lalu pilih finish
+
+![Image](https://github.com/user-attachments/assets/c9932855-716b-4b38-b413-5cec5897f2a9)
+
+- Untuk tombol build, upload, serial monitor, dan lain-lain ada di bagian bawah VsCode
+
+![Image](https://github.com/user-attachments/assets/b269f83f-5bb4-4c73-a095-80a31cf82d26)
+
+- Untuk tutorial lebih lengkap dari PlatformIO kalian bisa cek pada video ini https://youtu.be/tc3Qnf79Ny8?si=eTluzbBJOMf1335Y
 
 
 ### 3. Upload program Beacon ke perangkat esp 32
