@@ -5,10 +5,10 @@
 #include "esp_sleep.h"
 
 
-const char* BEACON_NAME   = "Beacon1";
+const char* BEACON_NAME   = "Beacon2";
 const uint64_t SLEEP_TIME = 5ULL * 60ULL * 1000000ULL;   
-const uint8_t  BURST_CNT  = 10;      
-const uint16_t BURST_GAP  = 30;     
+const uint8_t  BURST_CNT  = 3;      
+const uint16_t BURST_GAP  = 200;     
 
 
 
@@ -35,11 +35,11 @@ void setup() {
   
   for (uint8_t i = 0; i < BURST_CNT; ++i) {
     adv->start();
-    delay(10);      
+    delay(200);      
     adv->stop();
     if (i < BURST_CNT - 1) delay(BURST_GAP);
   }
-  Serial.printf("Burst %u× selesai, masuk deep‑sleep…\n", BURST_CNT);
+  Serial.printf("📡 Burst %u× selesai, masuk deep‑sleep…\n", BURST_CNT);
 
   
   BLEDevice::deinit(true);        
@@ -53,8 +53,8 @@ void loop() {  }
 void wakeupMsg() {
   esp_sleep_wakeup_cause_t cause = esp_sleep_get_wakeup_cause();
   if (cause == ESP_SLEEP_WAKEUP_TIMER) {
-    Serial.println("Bangun");
+    Serial.println("🔋 Wake‑up dari deep‑sleep");
   } else {
-    Serial.println("reset normal");
+    Serial.println("🔄 Cold boot / reset normal");
   }
 }
