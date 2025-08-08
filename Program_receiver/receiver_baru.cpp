@@ -18,8 +18,8 @@ const char* LOCATION_NAME = "Lokasi B";
 const char* TARGET_BEACONS[] = {"Beacon1", "Beacon2", "Beacon3"};
 const int NUM_BEACONS = sizeof(TARGET_BEACONS) / sizeof(TARGET_BEACONS[0]);
 
-#define SCAN_TIME 2               // Turunkan waktu scanning jadi lebih cepat
-#define SCAN_INTERVAL 3000        // Waktu antar scan (ms)
+#define SCAN_TIME 2               
+#define SCAN_INTERVAL 3000        
 
 BLEScan* pBLEScan;
 std::vector<String> detectedBeacons;
