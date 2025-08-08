@@ -13,7 +13,7 @@
 std::map<String, unsigned long> lastSeenMap;
 const unsigned long TIMEOUT_MS = 1000;
 
-#define SERVER_URL "http://10.4.90.28:5000/update_location"
+#define SERVER_URL "http://10.15.41.53:5000/update_location"
 const char* LOCATION_NAME = "Lokasi B";
 const char* TARGET_BEACONS[] = {"Beacon1", "Beacon2", "Beacon3"};
 const int NUM_BEACONS = sizeof(TARGET_BEACONS) / sizeof(TARGET_BEACONS[0]);
