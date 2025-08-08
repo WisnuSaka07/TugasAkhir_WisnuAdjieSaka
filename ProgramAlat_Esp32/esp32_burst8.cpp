@@ -7,8 +7,8 @@
 
 const char* BEACON_NAME   = "Beacon1";
 const uint64_t SLEEP_TIME = 8ULL * 60ULL * 1000000ULL;   
-const uint8_t  BURST_CNT  = 10;      
-const uint16_t BURST_GAP  = 30;     
+const uint8_t  BURST_CNT  = 3;      
+const uint16_t BURST_GAP  = 200;     
 
 
 
